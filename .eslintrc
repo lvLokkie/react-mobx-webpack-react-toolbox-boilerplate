@@ -1,0 +1,27 @@
+/**
+ * @author Ryazanov I.A
+ */
+{
+  "parser": "babel-eslint",
+  "env": {
+    "mocha": true
+  },
+  "globals": {
+    "document": true,
+    "window": true
+  },
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "linebreak-style": 0,
+    "react/prop-types": [1, { "skipUndeclared": true }]
+  },
+  "plugins": [
+    "babel",
+    "mocha",
+    "react"
+  ],
+  "settings": {
+    "import/resolver": "webpack"
+  },
+  "extends": "airbnb"
+}

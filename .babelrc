@@ -1,0 +1,30 @@
+{
+  "sourceMaps": true,
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "ie": 10,
+          "browsers": ["last 2 versions"]
+        },
+        "useBuiltIns": "usage"
+      }
+    ],
+    [
+      "@babel/preset-react",
+      {
+        "targets": {
+          "ie": 10,
+          "browsers": ["last 2 versions"]
+        },
+        "useBuiltIns": "usage"
+      }
+    ]
+  ],
+  "plugins": [
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    ["@babel/plugin-proposal-class-properties", { "loose" : true }],
+    "@babel/plugin-syntax-dynamic-import"
+  ]
+}
