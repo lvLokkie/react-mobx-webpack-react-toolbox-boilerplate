@@ -21,13 +21,7 @@ export default class AppStore {
 
   @action
   authenticate() {
-    return new Promise((resolve) => {
-      this.authenticating = true;
-      setTimeout(() => {
-        this.authenticated = true;
-        this.authenticating = false;
-        resolve(true);
-      }, 0);
-    });
+    this.authenticated = true;
+    this.authenticating = false;
   }
 }
